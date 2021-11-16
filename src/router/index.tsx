@@ -1,10 +1,12 @@
 import {FC} from "react"
-import {Router, Route} from "react-router";
-import App from '../pages/App'
+import {Routes, Route} from "react-router";
+import Test from "../pages/test";
 
-const router: FC = () => (
-    <Router>
-        <Route path="/" component={App}>
+const MyRouter: FC = () => (
+    <Routes>
+        <Route path="/" element={<Test/>}>
         </Route>
-    </Router>
+    </Routes>
 )
+
+export default MyRouter
