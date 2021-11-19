@@ -1,13 +1,16 @@
 import React from 'react';
 import Header from './header/header'
 import List from './list/list'
-import todoStyle from './todo.module.css'
+import Footer from "./footer/footer";
+import "./todo.css"
+
 
 function Todo() {
     return (
-        <div className={todoStyle.todo}>
+        <div className={"todo"}>
             <Header></Header>
             <List></List>
+            <Footer></Footer>
         </div>
     );
 }

@@ -1,10 +1,9 @@
 import React from 'react';
 import {Input, Divider} from 'antd';
-import headerStyle from "../list/item.module.css"
 
 function Header() {
     return (
-        <div className={headerStyle.header}>
+        <div>
             <Input/>
             <Divider />
         </div>

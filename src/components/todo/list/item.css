@@ -1,0 +1,17 @@
+.item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item-paragraph {
+    flex: 1;
+    margin-left: 10px;
+}
+
+
+.item-button {
+    justify-content: right;
+    width: 100px;
+}

@@ -1,15 +1,20 @@
 import React from 'react';
 import {Checkbox, Button, Typography} from 'antd';
-import itemStyle from "./item.module.css"
+import "./item.css"
 
-function Item() {
+interface ItemPropsInterface {
+    content: string
+    onButtonClick: (event: React.MouseEvent<HTMLButtonElement>) => void
+}
+
+function Item(props: ItemPropsInterface) {
     return (
-        <div className={itemStyle.item}>
+        <div className={"item"}>
             <Checkbox/>
-            <div className={itemStyle.divParagraph}>
-                <Typography>你好呀</Typography>
+            <div className={"item-paragraph"}>
+                <Typography>{props.content}</Typography>
             </div>
-            <Button type="primary">Primary Button</Button>
+            <Button className={"item-button"} type="default" onClick={props.onButtonClick}>Delete</Button>
         </div>
     );
 }
